@@ -1,6 +1,7 @@
 #!/bin/bash
 
 OUTFILE="${1:-custom-build}"
+INFILE="${2:-iso-contents}"
 
 docker build -t isobuilder .
 
@@ -10,7 +11,7 @@ docker run -v $(pwd):/root isobuilder \
   -c boot.cat -no-emul-boot \
   -boot-load-size 4 \
   -boot-info-table -J -R -V "Custom ISO Preseed" \
-  ./root/iso-contents
+  /root/${INFILE}
 
 echo "making iso boootable"
 
