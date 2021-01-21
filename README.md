@@ -3,7 +3,7 @@
 ### extract iso
 
 ```
-./extract /path/to/iso
+./extract /path/to/alpine/iso
 ```
 
 ### tweak iso
