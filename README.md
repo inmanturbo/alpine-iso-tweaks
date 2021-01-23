@@ -12,7 +12,7 @@
 
 ```
 cd iso-contents
-hack hack hack nano this vi that sed scribble scrabble boot/grub.cfg (adds intel_iommu=on)
+hack hack hack nano this vi that sed scribble scrabble boot/syslinux/syslinux.cfg (adds intel_iommu=on)
 ```
 
 ### rebuild custom iso
